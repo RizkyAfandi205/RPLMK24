@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        background-color: #7f27ff;
+      }
+      .navbar-brand {
+        font-weight: 600;
+      }
+      i .fa-comment {
+        color: black;
+      }
+      a {
+        text-decoration: none;
+      }
+      .kategori a i:hover {
+        text-decoration: none;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">Gallery Photo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Category <i class="fas fa-angle-down"></i> </a>
+              <ul class="dropdown-menu overflow-auto">
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-paint-brush me-2"></i>Art</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-tshirt me-2"></i>Fashion</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-volleyball-ball me-2"></i>Sport</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-hamburger me-2"></i>Food</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-dragon me-2"></i>Animal</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-cat me-2"></i>Pet</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-palette me-2"></i>Anime</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fas fa-mountain me-2"></i>View</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Search -->
+    <div class="container-fluid p-3">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-12">
+          <form action="" class="d-flex">
+            <input class="form-control me-2" list="datalistOptions" id="exampleDataList" placeholder="Ketik Untuk Mencari..." />
+            <datalist id="datalistOptions">
+              <option value="Art"></option>
+              <option value="Fashion"></option>
+              <option value="Anime"></option>
+              <option value="Food"></option>
+            </datalist>
+
+            <button class="btn btn-outline-success"><i class="fas fa-search"> Search</i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Search -->
+
+    <!-- Kategori -->
+    <div class="kategori container">
+      <h2 class="mt-4">Category</h2>
+      <div class="rounded mb-5 mt-2 p-3" style="background-color: #7f27ff">
+        <div class="row justify-content-center text-center p-3">
+          <a href="#" class="col-md-3 col-sm-4 col-6 text-white">
+            <i class="fas fa-paint-brush" style="font-size: 30px"></i>
+            <p>Art</p>
+          </a>
+          <div class="col-md-3 col-sm-4 col-6 text-white">
+            <i class="fas fa-tshirt" style="font-size: 30px"></i>
+            <p>Fashion</p>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 text-white">
+            <i class="fas fa-volleyball-ball" style="font-size: 30px"></i>
+            <p>Sport</p>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 text-white">
+            <i class="fas fa-hamburger" style="font-size: 30px"></i>
+            <p>Food</p>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 text-white">
+            <i class="fas fa-dragon" style="font-size: 30px"></i>
+            <p>Animal</p>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 text-white">
+            <i class="fas fa-cat" style="font-size: 30px"></i>
+            <p>Pet</p>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 text-white">
+            <i class="fas fa-palette" style="font-size: 30px"></i>
+            <p>Anime</p>
+          </div>
+          <div class="col-md-3 col-sm-4 col-6 text-white">
+            <i class="fas fa-mountain" style="font-size: 30px"></i>
+            <p>View</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Kategori -->
+
+    <!-- Postingan -->
+    <div class="container">
+      <h2 class="mb-3">Most Like <i class="fas fa-fire" style="color: #ff6600"></i></h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-12">
+          <div class="card mb-3 px-3 pt-3">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.bViJEP7KiHcLTFWLdHQ2pQHaFj&pid=Api&P=0&h=180" class="card-img-top rounded" alt="..." />
+            <div class="card-body">
+              <div class="user d-flex">
+                <p class="card-title fw-bold" style="margin-top: 1px">Kipan</p>
+                <img class="mt-1" width="20" height="20" src="assets/verif.gif" />
+              </div>
+              <p id="desk" class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quo molestias, ex odit dignissimos officiis temp
+              </p>
+
+              <div class="like mt-4">
+                <i class="far fa-heart me-1"></i>
+                <i class="far fa-comment"></i>
+              </div>
+              <p class="card-text"><small class="text-body-secondary">08/02/2024</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/8f81cad53a.js" crossorigin="anonymous"></script>
+    <!-- JavaSript -->
+  </body>
+</html>
